@@ -1,3 +1,40 @@
+// const express = require('express');
+// const path = require('path');
+// const http = require('http');
+// const SocketIO = require('socket.io');
+
+// const app = express();
+
+// // Serve static files from the 'public' directory
+// app.use(express.static(path.join(__dirname, '/public')));
+
+// const server = http.createServer(app);
+
+// const io = SocketIO(server);
+
+// io.on('connection', function (socket) {
+//     console.log('A user connected');
+
+//     // Listen for chat messages
+//     socket.on('chat-message', function (data) {
+
+//         // Broadcast the message to all connected clients
+//         io.emit('chat-message', data);
+
+//     })
+//      // Listen for disconnection
+
+//     socket.on('disconnect', function () {
+//         console.log('User disconnected');
+//     });
+// })
+
+
+// server.listen(3005,()=>{
+//     console.log('server started');
+// });
+
+
 const express = require('express');
 const path = require('path');
 const http = require('http');
@@ -26,6 +63,6 @@ io.on('connection', function (socket) {
 
 
 
-app.listen(3005,()=>{
+server.listen(3005,()=>{
     console.log('server started');
 })
