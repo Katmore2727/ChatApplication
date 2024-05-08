@@ -1,0 +1,29 @@
+#chat-output{
+    height: 450px;
+    width: 580px;
+    border: 3px dotted black;
+    margin-left: 8px;
+    overflow-y: scroll; 
+    /* color: black; */
+    /* background-color: aquamarine; */
+}
+#chat-container{
+    margin-left: 480px;
+    border: 1px solid black;
+    height: 600px;
+    width: 600px;
+}
+#chat-header{
+    text-align: center;
+    text-decoration: underline overline;
+}
+#input-container{
+    margin-top: 20px;
+    text-align: center;
+}
+#input-container input{
+    height: 30px;
+}
+#input-container button{
+    height: 30px;
+}
